@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
 import Form from './Form'
+import MemberCard from './MemberCard';
 import './App.css';
 
+
 function App() {
-    const [card, setCard] = useState({name: '', email: '', role: '0'})
+  const [team, setTeam] = useState([{
+    id: 1,
+    name: 'Tyge Davis',
+    email: 'td@lambda.com',
+    role: 'Front-End Engineer'
+  }])
 
   const addNewTeam = member => {
     const newMember = {
@@ -12,10 +19,15 @@ function App() {
       email: member.email,
       role: member.value
     };
-    setCard([...card, newMember])
+    setTeam([...team, newMember])
   }
+
   return (
-    <Form addNewTeam={addNewTeam}/>
+    <>
+      <Form addNewTeam={addNewTeam}/>
+      <h2>Your Team</h2>
+      <MemberCard team={team}/>
+    </>
   );
 }
 
