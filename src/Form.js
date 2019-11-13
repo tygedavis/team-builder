@@ -54,6 +54,8 @@ function Form(props) {
                         <option value='Front-End Engineer'>Front-End Engineer</option>
                         <option value='Back-End Engineer'>Back-End Engineer</option>
                         <option value='Designer'>Designer</option>
+                        <option value='Data Scientist'>Data Scientist</option>
+                        <option value='IOS Development'>IOS Development</option>
                 </select>
                 <button className='button' type='submit'>Add Team Memeber</button>
             </div>
