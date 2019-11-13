@@ -7,9 +7,9 @@ import './App.css';
 function App() {
   const [team, setTeam] = useState([{
     id: 1,
-    name: 'Tyge Davis',
-    email: 'td@lambda.com',
-    role: 'Front-End Engineer'
+    name: 'Josh Knell',
+    email: 'jk@lambda.com',
+    role: 'Master of the Universe'
   }])
 
   const addNewTeam = member => {
