@@ -3,12 +3,12 @@ import React from "react";
 const MemberCard = props => {
     console.log("Props on MemberCard", props)
   return (
-    <div className="team-list">
+    <div className="teamList">
       {props.team.map( member => (
-        <div key={member.id}>
+        <div className='teamInfo' key={member.id}>
           <h2>{member.name}</h2>
-          <p>{member.email}</p>
-          <p>{member.role}</p>
+          <p>Email: {member.email}</p>
+          <p>Position: {member.role}</p>
         </div>
       ))}
     </div>

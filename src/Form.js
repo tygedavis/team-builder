@@ -23,35 +23,40 @@ function Form(props) {
 
     return (
         <form onSubmit={submitForm}>
-            <h1>Team Builder</h1>
-            <label htmlFor='name'>Name</label>
-            <input 
-            id='name'
-            type='text'
-            name='name'
-            onChange={handleChange}
-            value={formData.name}
-            />
-            <label htmlFor='email'>Email</label>
-            <input
-            id='email'
-            type='text'
-            name='email'
-            onChange={handleChange}
-            value={formData.email}
-            />
-            <label htmlFor='role'>Role on Your Team</label>
-            <select 
-                id='role' 
-                name='role' 
-                onChange={handleChange} 
-                value={formData.role.value}>
-                    <option />
-                    <option value='Front-End Engineer'>Front-End Engineer</option>
-                    <option value='Back-End Engineer'>Back-End Engineer</option>
-                    <option value='Designer'>Designer</option>
-            </select>
-            <button type='submit'>Add Team Memeber</button>
+            <h1 className='header'>Team Builder</h1>
+            <div className='formInput'>
+                <label htmlFor='name'>Name</label>
+                <input 
+                id='name'
+                type='text'
+                name='name'
+                onChange={handleChange}
+                value={formData.name}
+                placeholder='Full Name'
+                />
+                <label htmlFor='email'>Email</label>
+                <input
+                id='email'
+                type='text'
+                name='email'
+                onChange={handleChange}
+                value={formData.email}
+                placeholder='Email'
+                />
+                <label htmlFor='role'>Role on Your Team</label>
+                <select 
+                    id='role' 
+                    name='role' 
+                    onChange={handleChange} 
+                    value={formData.role.value}
+                    placeholder='Your Role on the Team'>
+                        <option className='noShow'/>
+                        <option value='Front-End Engineer'>Front-End Engineer</option>
+                        <option value='Back-End Engineer'>Back-End Engineer</option>
+                        <option value='Designer'>Designer</option>
+                </select>
+                <button className='button' type='submit'>Add Team Memeber</button>
+            </div>
         </form>
     );
 }
