@@ -17,7 +17,7 @@ function App() {
       id: Date.now(),
       name: member.name,
       email: member.email,
-      role: member.value
+      role: member.role
     };
     setTeam([...team, newMember])
   }
