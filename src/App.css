@@ -78,9 +78,10 @@ h2{
 
 .teamList{
   margin: 0 auto;
-  width: 80%;
+  width: 85%;
   padding: 10px;
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -89,5 +90,5 @@ h2{
   border-radius: 15px;
   background-color: white;
   padding: 15px;
-  margin: 10px 25px;
+  margin: 10px;
 }
